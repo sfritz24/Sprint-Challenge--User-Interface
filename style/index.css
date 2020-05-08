@@ -18,8 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -49,6 +47,11 @@ table {
 
 * {
     box-sizing: border-box;
+    /* border: 1px solid gray; */
+}
+
+html {
+    font-size: 62.5%;
 }
 
 html, body {
@@ -57,18 +60,51 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.2rem;
 }
 
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+header {
+    margin-bottom: 2%;
+}
+
+.header div {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.header div h1 {
+    margin: 0 4% auto;
+    font-size: 4.0rem;
+}
+
+.header div nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.header div nav a {
+    margin: 0 5%;
+    font-size: 1.2rem;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .top-content {
@@ -110,6 +146,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
 }
 
 .bottom-content {
@@ -137,10 +174,113 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.middle-content .boxes .box.box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box.box2 {
+    background: gold;
+}
+
+.middle-content .boxes .box.box3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box.box4 {
+    background: coral;
+}
+
+.middle-content .boxes .box.box5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box.box6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box.box7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box.box8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box.box9 {
+    background: indigo;
+}
+
+.middle-content .boxes .box.box10 {
+    background: dodgerblue;
+}
+
+@media(max-width: 800px) {
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-content .text-container {
+        width: 80%;
+    }
+}
+
+@media(max-width: 500px){
+    .container {
+        width:100%;
+    }
+    .header div {
+        display: flex;
+        flex-direction: column;
+        margin: 1% 0;
+        align-items: center;
+    }
+    header img {
+        width: 90%;
+    }
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-content .text-container {
+        width: 90%;
+    }
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .middle-content .boxes .box {
+        width: 20%;
+        height: 100px;
+        margin: 20px 2.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
