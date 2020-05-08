@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    font-size: 1.2rem;
 }
 
 .container {
@@ -74,10 +75,14 @@ p {
     margin: 0 auto;
 }
 
+header {
+    margin-bottom: 2%;
+}
+
 .header div {
     display: flex;
     justify-content: space-between;
-    margin: 3% 0;
+    margin: 1% 0;
 }
 
 .header div h1 {
@@ -86,17 +91,20 @@ p {
 }
 
 .header div nav {
-    /* margin: 0 5%; */
     width: 90%;
-    /* padding: 0 20%; */
     display: flex;
     align-items: center;
 }
 
 .header div nav a {
-    padding: 0 1%;
     margin: 0 5%;
     font-size: 1.2rem;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .top-content {
@@ -138,6 +146,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
 }
 
 .bottom-content {
@@ -171,4 +180,44 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.middle-content .boxes .box.box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box.box2 {
+    background: gold;
+}
+
+.middle-content .boxes .box.box3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box.box4 {
+    background: coral;
+}
+
+.middle-content .boxes .box.box5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box.box6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box.box7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box.box8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box.box9 {
+    background: indigo;
+}
+
+.middle-content .boxes .box.box10 {
+    background: dodgerblue;
 }
