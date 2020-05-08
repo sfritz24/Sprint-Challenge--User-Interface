@@ -74,6 +74,31 @@ p {
     margin: 0 auto;
 }
 
+.header div {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+}
+
+.header div h1 {
+    margin: 0 4% auto;
+    font-size: 4.0rem;
+}
+
+.header div nav {
+    /* margin: 0 5%; */
+    width: 90%;
+    /* padding: 0 20%; */
+    display: flex;
+    align-items: center;
+}
+
+.header div nav a {
+    padding: 0 1%;
+    margin: 0 5%;
+    font-size: 1.2rem;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
